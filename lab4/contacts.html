@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Кондитерская «Pusheen cat»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Контакты и онлайн-заказ</h1>
+        <p class="header__subtitle">Как нас найти и оформить заказ на десерты</p>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="catalog.html">Меню и цены</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link_active" href="contacts.html">Контакты и заказ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="contacts-card">
+            <h2 class="contacts-card__title">Ждём вас в гости!</h2>
+            <p class="contacts-card__item"><strong>Адрес нашей кондитерской:</strong> ул. Садовая, д. 15.</p>
+            <p class="contacts-card__item"><strong>Телефон для заказов:</strong> +7 (967) 123-45-67</p>
+            <p class="contacts-card__item"><strong>Режим работы:</strong> ежедневно с 09:00 до 20:00</p>
+        </section>
+
+        <section class="order-section">
+            <h2 class="order-section__title">Оформить предзаказ десертов</h2>
+            <form class="order-form" id="orderForm">
+                <div class="order-form__group">
+                    <label class="order-form__label" for="customerName">Ваше имя:</label>
+                    <input
+                        class="order-form__input"
+                        type="text"
+                        id="customerName"
+                        name="customerName"
+                        minlength="2"
+                        placeholder="Например, Екатерина"
+                        required
+                    >
+                </div>
+
+                <div class="order-form__group">
+                    <label class="order-form__label" for="customerPhone">Номер телефона:</label>
+                    <input
+                        class="order-form__input"
+                        type="tel"
+                        id="customerPhone"
+                        name="customerPhone"
+                        pattern="[0-9\+\-\(\)\s]{7,20}"
+                        placeholder="+7 (676) 767-67-67"
+                        required
+                    >
+                </div>
+
+                <div class="order-form__row">
+                    <div class="order-form__group order-form__group_grow">
+                        <label class="order-form__label" for="dessertSelect">Выберите десерт:</label>
+                        <select class="order-form__input order-form__input_type_select" id="dessertSelect" name="dessert">
+                            <option value="Булочки Pusheen (2 шт.)">Булочки Pusheen (2 шт.) — 400 руб.</option>
+                            <option value="Макарон (набор 4 шт.)">Макарон (набор 4 шт.) — 400 руб.</option>
+                            <option value="Фирменный эклер">Фирменный эклер — 250 руб.</option>
+                            <option value="Бенто-торт «Пушин»">Бенто-торт «Пушин» — 1 200 руб.</option>
+                            <option value="Чизкейк Нью-Йорк">Чизкейк Нью-Йорк — 320 руб.</option>
+                            <option value="Капкейк «Клубничный кот»">Капкейк «Клубничный кот» — 280 руб.</option>
+                        </select>
+                    </div>
+
+                    <div class="order-form__group">
+                        <label class="order-form__label" for="quantityInput">Количество порций:</label>
+                        <input
+                            class="order-form__input"
+                            type="number"
+                            id="quantityInput"
+                            name="quantity"
+                            min="1"
+                            max="20"
+                            value="1"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="order-form__group">
+                    <label class="order-form__label" for="commentInput">Пожелания к заказу (необязательно):</label>
+                    <textarea
+                        class="order-form__input order-form__input_type_textarea"
+                        id="commentInput"
+                        name="comment"
+                        rows="3"
+                        placeholder="Укажите желаемое время самовывоза или надпись на торте..."
+                    ></textarea>
+                </div>
+
+                <div class="order-form__checkbox-group">
+                    <input
+                        class="order-form__checkbox"
+                        type="checkbox"
+                        id="agreementCheckbox"
+                        name="agreement"
+                        required
+                    >
+                    <label class="order-form__checkbox-label" for="agreementCheckbox">
+                        Я согласен(на) на обработку персональных данных и подтверждение заказа по телефону
+                    </label>
+                </div>
+
+                <button class="order-form__button" type="submit">Отправить заказ на сервер</button>
+                <p class="order-form__status" id="orderStatus" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2026 Кондитерская «Pusheen cat» • ул. Садовая, д. 15</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

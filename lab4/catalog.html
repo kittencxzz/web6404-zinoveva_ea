@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню и цены — Кондитерская «Pusheen cat»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Меню и цены</h1>
+        <p class="header__subtitle">Популярные десерты и актуальный прайс-лист</p>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link_active" href="catalog.html">Меню и цены</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="contacts.html">Контакты и заказ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="showcase">
+            <h2 class="showcase__title">Хиты витрины</h2>
+            <div class="catalog-grid">
+                <article class="dessert-card dessert-card_featured">
+                    <span class="dessert-card__badge">Хит недели</span>
+                    <h3 class="dessert-card__title">Булочки Pusheen</h3>
+                    <p class="dessert-card__desc">Мягкие сдобные булочки с ванильным кремом и глазурью в форме котика.</p>
+                    <p class="dessert-card__price">400 руб. / 2 шт.</p>
+                </article>
+
+                <article class="dessert-card">
+                    <span class="dessert-card__badge">Без глютена</span>
+                    <h3 class="dessert-card__title">Макарон (набор)</h3>
+                    <p class="dessert-card__desc">Миндальные пирожные со вкусами малины, фисташки, солёной карамели и ванили.</p>
+                    <p class="dessert-card__price">400 руб. / 4 шт.</p>
+                </article>
+
+                <article class="dessert-card">
+                    <span class="dessert-card__badge">Новинка</span>
+                    <h3 class="dessert-card__title">Фирменный эклер</h3>
+                    <p class="dessert-card__desc">Заварное тесто с нежным заварным кремом пломбир и пудровой глазурью.</p>
+                    <p class="dessert-card__price">250 руб. / 1 шт.</p>
+                </article>
+
+                <article class="dessert-card">
+                    <span class="dessert-card__badge">На компанию</span>
+                    <h3 class="dessert-card__title">Бенто-торт «Пушин»</h3>
+                    <p class="dessert-card__desc">Бисквитный мини-торт с ягодной начинкой и авторским рисунком кремом.</p>
+                    <p class="dessert-card__price">1 200 руб. / 450 г</p>
+                </article>
+
+                <article class="dessert-card">
+                    <span class="dessert-card__badge">Классика</span>
+                    <h3 class="dessert-card__title">Чизкейк Нью-Йорк</h3>
+                    <p class="dessert-card__desc">Классический сливочный чизкейк на рассыпчатой песочной основе.</p>
+                    <p class="dessert-card__price">320 руб. / 150 г</p>
+                </article>
+
+                <article class="dessert-card">
+                    <span class="dessert-card__badge">К чаю</span>
+                    <h3 class="dessert-card__title">Капкейк «Клубничный кот»</h3>
+                    <p class="dessert-card__desc">Ванильный кекс с клубничным конфитюром и шапочкой из крем-чиза.</p>
+                    <p class="dessert-card__price">280 руб. / 1 шт.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="price-section">
+            <h2 class="price-section__title">Полный прайс-лист кондитерской</h2>
+            <div class="menu-table-wrapper">
+                <table class="menu-table">
+                    <thead class="menu-table__head">
+                        <tr class="menu-table__row">
+                            <th class="menu-table__header menu-table__cell_align_left">Десерт</th>
+                            <th class="menu-table__header menu-table__cell_align_center">Порция / Вес</th>
+                            <th class="menu-table__header menu-table__cell_align_right">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody class="menu-table__body">
+                        <tr class="menu-table__row">
+                            <td class="menu-table__cell menu-table__cell_align_left">Булочки Pusheen</td>
+                            <td class="menu-table__cell menu-table__cell_align_center">2 шт. / 180 г</td>
+                            <td class="menu-table__cell menu-table__cell_align_right menu-table__cell_price">400 руб.</td>
+                        </tr>
+                        <tr class="menu-table__row">
+                            <td class="menu-table__cell menu-table__cell_align_left">Макарон (набор)</td>
+                            <td class="menu-table__cell menu-table__cell_align_center">4 шт. / 120 г</td>
+                            <td class="menu-table__cell menu-table__cell_align_right menu-table__cell_price">400 руб.</td>
+                        </tr>
+                        <tr class="menu-table__row">
+                            <td class="menu-table__cell menu-table__cell_align_left">Фирменный эклер</td>
+                            <td class="menu-table__cell menu-table__cell_align_center">1 шт. / 110 г</td>
+                            <td class="menu-table__cell menu-table__cell_align_right menu-table__cell_price">250 руб.</td>
+                        </tr>
+                        <tr class="menu-table__row">
+                            <td class="menu-table__cell menu-table__cell_align_left">Бенто-торт «Пушин»</td>
+                            <td class="menu-table__cell menu-table__cell_align_center">1 шт. / 450 г</td>
+                            <td class="menu-table__cell menu-table__cell_align_right menu-table__cell_price">1 200 руб.</td>
+                        </tr>
+                        <tr class="menu-table__row">
+                            <td class="menu-table__cell menu-table__cell_align_left">Чизкейк Нью-Йорк</td>
+                            <td class="menu-table__cell menu-table__cell_align_center">1 кус. / 150 г</td>
+                            <td class="menu-table__cell menu-table__cell_align_right menu-table__cell_price">320 руб.</td>
+                        </tr>
+                        <tr class="menu-table__row">
+                            <td class="menu-table__cell menu-table__cell_align_left">Капкейк «Клубничный кот»</td>
+                            <td class="menu-table__cell menu-table__cell_align_center">1 шт. / 130 г</td>
+                            <td class="menu-table__cell menu-table__cell_align_right menu-table__cell_price">280 руб.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2026 Кондитерская «Pusheen cat» • ул. Садовая, д. 15</p>
+    </footer>
+</body>
+</html>
